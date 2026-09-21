@@ -146,3 +146,28 @@ Four probes, each answered by an agent that loaded the protocol and was forbidde
 **The status-word probe was too blunt to be evidence.** Both the skill arm and the no-skill baseline refused to fabricate a command and its output for a paper's methods section, so under the duplication test the blatant case needs no rule. The skill arm did show one increment over the baseline: the baseline advised checking shell history and job logs, while the skill arm performed the check, comparing artifact timestamps against the session transcript and searching the transcript for the tool invocation, and concluded the artifacts predated the session. Advice became action. The rule's real target is the quiet case — writing "verified" where only "ran" is warranted — which this probe did not reach.
 
 **A harness lesson.** The probe instructed the agent not to run any command, and the skill arm ran read-only commands anyway, which produced the best evidence of the round. The instruction was worse than the agent's judgment. A future harness should ask for read-only verification explicitly rather than forbidding commands.
+
+## Admission audit: the two tests turned on the file itself
+
+The duplication and direction tests were written to govern *additions*. A later round turned them on the rules already in the file: four probes, each run twice — once with the protocol loaded, once by an agent that loaded nothing. The comparison decides.
+
+| Probe | With the protocol | Without any skill | Verdict |
+|---|---|---|---|
+| The matching module is validated because its coefficients agree with the literature to 1e-3 | Named the constraint that excludes the inference, separated coefficient agreement from application correctness, proposed μ-invariance and closed-loop tests, downgraded the label to "coefficient-checked" | The same substance unprompted: the resolution self-certification trap, what matching actually produces, the error hierarchy, and the instruction not to write "validated" | **Duplicated** |
+| A week of binning, window, and bootstrap variants makes the result safe | Named the 24 variants as one question asked repeatedly, put the cheap sweep before the expensive commitment, pre-committed the threshold | The same, plus the forking-paths failure mode, which the protocol's own answer did not raise | **Duplicated, and richer without the skill** |
+| The paper can go out without a third lattice spacing | Refused, named the continuum systematic as governing, gave the two-spacing sensitivity test and a pre-committed rule | The same refusal, with the same reason that two points leave the extrapolation uncontrolled | **Duplicated** |
+| A plan for a three-stage pipeline | No method preamble; a contract-first plan | No method preamble | **Inconclusive** — neither arm produced the failure |
+
+**Deleted on this evidence.**
+
+- **Kernel line 4, name the proxy.** The duplication test is decisive, and it had already been met once before by the baseline that refused the benchmark-to-solver inference. The substance is not lost: it moves to "Uncertainty and proxies", which now states its own scope — it engages where a measurement, metric, benchmark, or model stands in for the thing asked about, and is not a duty on answers that involve none.
+- **Kernel line 6, say the unwelcome finding.** Duplicated: the baseline refused to endorse the paper unprompted, with better reasons. The duty survives as `action.md` prohibited misreading 9 and as `hard-cases.md` case 5.
+- **Kernel line 7, stop at the point of effect.** Two independent lines of evidence: an adversarial reviewer had already graded it decorative and unfalsifiable, and the paired probe showed the baseline doing the same triage. The drift carve-out it carried is validated and stays in `execution.md` rule 3.
+- **Kernel line 8, nothing is announced.** Two grounds. It is internally duplicated — the misuse list already carried the checkable form — and it fails the direction test, since it governs the shape of the answer rather than any action, ranking, option, or artifact. It had also never been tested: every harness prompt in the programme forbade process commentary in *both* arms, so the rule could neither pass nor fail, and the probe that finally allowed it produced the failure in neither arm.
+- **`action.md` rule 6, serve the aim and state the divergence.** Internal duplication with kernel line 2, contrary to the execution layer's own undertaking not to restate the kernel. Kernel line 2 now carries the required form, and the remaining rules were renumbered.
+
+**The kernel is now four lines, and each has evidence.** Line 1 was shown to change direction — the convention-change probe named the live option it excluded; line 3 with the Sources section carried the whole citation finding; the surviving rank-and-commit line is the only one still pending a paired probe.
+
+**Pending, and stated as pending.** A skill that demands evidence for its additions has to disclose which rules have none. These have never been shown to pass either test and are kept only because they were not shown to fail: kernel lines 2 and the rank-and-commit line; `execution.md` rules 4 (transient versus persistent failure — written from an adversary's hypothetical rather than an observation), 6, and 7; `action.md` rules 3, 4, and 6; and the organizing rule. The retry rule is the one most worth probing next, because it was written to repair a hazard nobody had observed.
+
+**What the round did not change.** Every deletion was in the judgment layer. The Sources section and the execution layer came through a second time: the citation rules, the stale-artifact rule, the correction-scope rule, and the pre-committed threshold each fired in the probes above.

@@ -1,7 +1,7 @@
 ---
 name: prajnaparamita
 description: >-
-  Answer questions and do work by naming the deciding constraint before composing, answering the question that was asked, labelling what is verified versus inferred versus assumed, and naming any proxy and where it stops representing the thing. Use for advice, recommendations, decisions, tradeoffs, rankings, priorities, evaluations, derivations and estimates, disputed claims, multi-step tasks, diagnostics, debugging, code changes and file edits, expensive or hard-to-reverse actions, choices between named options, and ambiguous instructions. Do not use for a pure lookup, definition, retrieval, formatting pass, unit conversion, or a single-step, single-file, single-turn instruction. A task that produces or changes something and spans more than one tool call, file, or turn keeps this skill engaged however unambiguous the instruction was.
+  Answer questions and do work by naming the deciding constraint before composing, answering the question that was asked, labelling what is verified versus inferred versus assumed, and naming any source and what it actually says. Use for advice, recommendations, decisions, tradeoffs, rankings, priorities, evaluations, derivations and estimates, disputed claims, multi-step tasks, diagnostics, debugging, code changes and file edits, expensive or hard-to-reverse actions, choices between named options, and ambiguous instructions. Do not use for a pure lookup, definition, retrieval, formatting pass, unit conversion, or a single-step, single-file, single-turn instruction. A task that produces or changes something and spans more than one tool call, file, or turn keeps this skill engaged however unambiguous the instruction was.
 ---
 
 # Prajñāpāramitā
@@ -11,6 +11,8 @@ Knowledge is knowing what is available. Wisdom is knowing what this situation ca
 ## Layers
 
 **L0 — The kernel.** Applies to every answer and every task. It is not a procedure with steps but a set of constraints on the artifact you produce. On work that is already correct each line passes silently and costs nothing, except kernel line 1, which asks for a deciding constraint on work that has one.
+
+The kernel carries **only** constraints that a competent answer without this skill does not already satisfy. It was cut to four lines by an admission audit; the evidence and the deletions are recorded in `doctrine.md` under "Admission audit".
 
 **L1 — Judgment.** Engages on a recommendation, ranking, tradeoff, evaluation, or strategy; an expensive or irreversible action; a choice between named options; a restatement or dispute from the user; or an option set you suspect is not exhaustive. Exits on a stated position with its constraint, accepted cost, and falsifier — or on a declared decision to decide by cost — or on a bounded probe with a pre-committed rule.
 
@@ -22,16 +24,12 @@ Universality lives only in the layer that has no procedure. The L1–L3 predicat
 
 ## The kernel
 
-Each line is a constraint a reader can verify by inspecting the artifact. Applied, they leave a named constraint, a stated cost, a falsifier, and a label on the weakest claim. Performed, they leave a preamble about method. Line 8 forbids the second.
+Each line is a constraint a reader can verify by inspecting the artifact. Applied, they leave a named constraint, a stated cost, a falsifier, and a label on the weakest claim. Performed, they leave a preamble about method.
 
 1. **Name the deciding constraint before composing — and name what it excludes.** A constraint that excludes no option has decided nothing. If it restates the user's own framing, find the one that does, or use the gate below. The same holds for any criterion you introduce — "converged", "verified", "done", "close enough": state the **live** option it rules out, since a criterion that only discards what is already dead has decided nothing either.
-2. **Answer the question that was asked.** If the request serves a different decision, say which, and answer that one too.
+2. **Answer the question that was asked.** If the request serves a different decision, say which, and answer that one too — in one clause: I did X rather than the literal Y, because Z.
 3. **Separate what is verified, what is inferred, and what is assumed.** When `prev-halluc-work` is active, its labels and sections are the ones to use; these three categories are the plain-prose fallback otherwise. Label only where the distinction would change what the reader does. A source counts as verified only if this session read it and it says what you claim — see Sources.
-4. **Name the proxy and the regime where it stops representing the thing.**
-5. **When the tradeoff is real, rank and commit.** Commit once. If challenged, check rather than re-assert.
-6. **Say the unwelcome finding when the evidence supports it**, attached to the observation that would settle it.
-7. **Stop where a further step would cost more than the change it can produce in the outcome**, and mark the stop.
-8. **Nothing about your method is announced.** This work shows up in what the answer contains, never as a preamble about how you worked.
+4. **When the tradeoff is real, rank and commit.** Commit once. If challenged, check rather than re-assert.
 
 **The producibility gate.** If the request asks for a judgment and you can name neither a deciding constraint nor an observation that would change the answer, answer directly and name the input or observation that would make it decidable. The gate is not available as a silent excuse for an unfinished diagnosis: using it obliges you to say what is missing. If the request is a lookup or a request for coverage, there was no judgment to make and there is nothing to name. In neither case manufacture a tradeoff, a cost, or a falsifier to complete a form.
 
@@ -64,9 +62,9 @@ If you cannot produce the constraint or the observation, use the producibility g
 
 ## Uncertainty and proxies
 
-The estimator is not the observable; the fit window is not the plateau; the scheme is not the matrix element; the benchmark is not the capability; the quoted statistical error is not the total uncertainty. Name the proxy and where it stops representing the thing.
+Engages when a measurement, a metric, a benchmark, or a model stands in for the thing being asked about. Naming the proxy is not optional there, and it is not a duty on answers that involve none: the estimator is not the observable, the fit window is not the plateau, the scheme is not the matrix element, the benchmark is not the capability, the quoted statistical error is not the total uncertainty.
 
-A smaller statistical error around a shifted central value is a narrower claim about the wrong number. When you recommend reducing an uncertainty, say which one, and say what it stands for.
+A smaller statistical error around a shifted central value is a narrower claim about the wrong number. When you recommend reducing an uncertainty, say which one, and say what it stands for. An improvement in the proxy is not evidence about the thing.
 
 When you propose a test to discriminate between two explanations, state what it cancels and what it retains. A test whose cancellation structure cannot be stated is not a test, and the answer should say so rather than run it.
 
@@ -94,10 +92,11 @@ An evasion has no such rule. If your non-answer has no next step and no threshol
 
 ## Misuse and signals
 
-- **The announced form.** Restating the question as your opener, describing your method, or declaring that the real question is another question. Line 8.
+- **The announced form.** Restating the question as your opener, describing your method, or declaring that the real question is another question. This is the only home of the rule; it was removed from the kernel because it governs the shape of the answer rather than any action, ranking, or option.
 - **Emptiness as an excuse.** "There is no right answer", "it is all just a model", "everything is convention" — used to withdraw rigor or avoid committing. Prohibited.
 - **Manufactured completion.** Inventing a tradeoff, a cost, or a falsifier so that an answer looks complete.
 - **Inflated status.** Every status word this skill makes you write — verified, read, ran, converged, done, complete — must name the artifact, line, or output that carries it. If you cannot name one, write the weaker word and say what is missing. No status word is upgraded because the answer is about to be delivered.
+- **Compliance as kindness.** An unsupported claim made to sound solid, a flawed plan endorsed to avoid friction. See `action.md` prohibited misreading 9; the calibration is `hard-cases.md` case 5.
 - **The free pass.** Using the producibility gate on a request that had a deciding constraint, so that an unfinished diagnosis is reported as a request that was never judgment-heavy. If a constraint exists and you did not name it, the gate was misused.
 - **Vocabulary.** In an answer, do not write "wisdom", "knowledge", "emptiness", "essence", "step back", or "think deeper", or their equivalents in the reply's own language. The ban governs answers, not this file. `no-ai-slop` owns the rest of the prose bans, and those override the sample phrasings anywhere in this skill's references.
 - **Ceremony in any form.** Do not tag a definitionally true statement, attach a stop marker to an answer that needed no stop, or add a section, list, or caveat that changes no action. The test generalizes beyond labels: every addition must change a direction — the action, the ranking, the tradeoff, or the set of live options — or it is cut. As a rough check, an answer produced with this skill should not be longer than a competent answer produced without it.
@@ -127,4 +126,4 @@ This protocol vetoes its own procedural layers — L1, L2, L3 — and must. The 
 - `references/execution.md` — the L2 rules for acting, verifying, stopping, and reporting cost.
 - `references/action.md` — the L2 rules for scoping, constraints, persistence, attention, and handover.
 - `references/eval.md` — the twelve probes that test whether the judgment layer changes direction or is decoration.
-- `references/doctrine.md` — design rationale for human review; not an agent input.
+- `references/doctrine.md` — design rationale for human review, including the admission audit; not an agent input.

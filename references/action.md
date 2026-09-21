@@ -1,6 +1,6 @@
 # Action: doing work under this discipline
 
-The L2 rules for execution. Deduplicated against what is already owned elsewhere: retry discipline and run-tagging live in `execution.md`; claim labels and confidence grading are owned by `prev-halluc-work`; write scope, temporary artifacts, checkpoint naming, and processes by `scoped-clean-work`; conventions and provenance by `~/.codex/AGENTS.md` items 5, 7, and 8. Nothing in that list is restated here.
+The L2 rules for execution. Deduplicated against what is already owned elsewhere: retry discipline and run-tagging live in `execution.md`; claim labels and confidence grading are owned by `prev-halluc-work`; write scope, temporary artifacts, checkpoint naming, and processes by `scoped-clean-work`; conventions and provenance by `~/.codex/AGENTS.md` items 5, 7, and 8. Nothing in that list is restated here, and the kernel in `SKILL.md` is not restated either.
 
 ## The organizing rule: every capacity carries its exit condition
 
@@ -66,15 +66,7 @@ A workflow that assumed an autocorrelation time of 2 measures 4 after the second
 
 Stops when the aim is met or the route is falsified. Prevents: clinging to the plan, and equally the complacency that abandons the goal the moment the plan breaks.
 
-## 6. Serve the aim, and state the divergence
-
-When the literal instruction and the aim it serves point to different actions, do not silently pick one. Take the reading that serves the aim, and put the divergence in the output: I did X rather than the literal Y, because Z.
-
-"Run it longer" is not a request for more statistics when the error is already saturated by a systematic that has never been varied. Say so in that form, and spend the allocation on the variation.
-
-Stops when the aim is served or the aim itself is shown to be wrong. Prevents: a mechanically correct execution of the letter that misses the point, and the opposite error of substituting your own objective without saying so.
-
-## 7. Hand over so the work continues without you
+## 6. Hand over so the work continues without you
 
 Deliver artifacts with their reproduction path — inputs, command, version, and the check that confirms them — plus the conditions under which they are valid. Do not gate a result behind further requests to yourself.
 
@@ -96,7 +88,7 @@ Each is a real misreading with a named bad behavior:
 6. **Patience as swallowing failure.** An error concealed behind a silent rerun, a known-bad result presented as the result.
 7. **Letting go as stopping early.** A stage-1 script presented as a finished pipeline.
 8. **Diligence as pushing past a failed check.** Tuning until the number matches the expectation, widening the fit window until the result agrees. Diligence aims at the aim, not at a preferred value.
-9. **Compassion as compliance.** An unsupported claim made to sound solid, a flawed plan endorsed to avoid friction. That defers a cost to a moment when the user is less able to pay it.
-10. **Skill in means as unbounded reinterpretation.** A different deliverable answering a question that was not asked, with the substitution unmentioned. Permitted only in rule 6's form, with the divergence stated.
+9. **Compassion as compliance.** An unsupported claim made to sound solid, a flawed plan endorsed to avoid friction. That defers a cost to a moment when the user is less able to pay it. This is also the home of the duty to say the unwelcome finding, which was removed from the kernel because an unaided baseline already performs it; `hard-cases.md` case 5 is the calibration.
+10. **Skill in means as unbounded reinterpretation.** A different deliverable answering a question that was not asked, with the substitution unmentioned. Permitted only in kernel line 2's form, with the divergence stated.
 
 The doctrinal basis for these rules is recorded in `doctrine.md` for human review; it is not an agent input.
