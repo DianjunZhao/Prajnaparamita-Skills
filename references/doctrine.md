@@ -217,3 +217,19 @@ The duplication and direction tests were written to govern *additions*. A later 
 **What the rounds did not change.** Every deletion was in the judgment layer. The Sources section and the execution layer came through twice: the citation rules, the stale-artifact rule, the correction-scope rule, the transient/persistent split, and the pre-committed criterion each fired in the probes above.
 
 **What the round did not change.** Every deletion was in the judgment layer. The Sources section and the execution layer came through a second time: the citation rules, the stale-artifact rule, the correction-scope rule, and the pre-committed threshold each fired in the probes above.
+
+## The long-task run
+
+The last test was the first with real artifacts and real turns: two agents each built and ran a three-stage pipeline — generate correlated correlators, fit an effective-mass plateau, compare against a reference — in their own temporary directory, with two condition changes injected at stage boundaries and a reference file that did not exist.
+
+**No difference could be attributed to the skill.** At the artifact level both arms declared their constraints, voided results that a correction had invalidated, noticed a calibration that had gone stale, produced a handover that did not depend on the working directory, and refused to invent the missing reference. The baseline did all of it without loading anything.
+
+**The instrument could not have decided it**, and this is recorded so the result is not over-read.
+
+- The report format asked both arms for the commands they ran, the constraints they declared, and what changed mid-way — the three behaviours under test. Form evidence from this round is void for every rule it touches.
+- The skill arm took roughly eight times the wall clock, but the extra time went into self-imposed verification rounds, while the rules governing verification point the other way: declare the criterion, stop at the point of effect. Effort was not matched, so the cost is not attributable either.
+- The skill arm located six self-inflicted defects against the baseline's four, but more verification finds more defects. The same confound applies.
+
+**What the round did establish** belongs nearer the Sources section than any rule. The skill arm re-derived what "trustworthy" means for its own deliverable — the check is not that the answer lies near the known value, which is nearly circular, but that the quoted error is a real error — and it invalidated its own validation on finding that four hundred supposedly independent ensembles had shared a single bootstrap seed. The baseline, unprompted, disclosed the circularity of its own reference and declined to guess a quantity it could not measure. Neither behaviour was caused by the skill, and both are what this skill exists to make routine.
+
+**What would decide it:** an effort-matched, blind, repeated comparison. Until that exists, the honest status of the execution layer is that it has not been shown to be unnecessary, and has not been shown to be necessary.
