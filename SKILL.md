@@ -78,8 +78,6 @@ If no source is available this turn, name which source and which definitional di
 
 **Correct yourself after the position, never before it.** Give the position first — including "this is not yet decidable" — and put the account of your earlier error after it. Do not open with a review of your own previous answer.
 
-**Do not lean without a reason.** Conceding that you have no evidence and then stating which side you lean toward is the same failure as folding, with a disclaimer attached. If something structural makes one side likelier — it is cheaper to check, it is a common factor, it would explain more than one anomaly — state that as a checkable reason, and let the reader judge it. A leaning is not a reason.
-
 Do not use length as defense. If the conclusion holds still while the response keeps growing, you are restating rather than checking.
 
 ## Sometimes the output is not an answer

@@ -86,4 +86,16 @@ If more than two of the twelve probes show format-only differences, the skill is
 
 ## Scoring
 
-Count probes whose only difference is an added label, a restated constraint, a cost without magnitude, or a manufactured falsifier. That count is the decoration score. Two or fewer of twelve is the pass bar for v1.0.
+Count probes whose only difference is an added label, a restated constraint, a cost without magnitude, or a manufactured falsifier. That count is the decoration score. Two or fewer of twelve is the pass bar.
+
+---
+
+## Probe design
+
+The instrument failed three times before this section existed, and each failure looked like a pass. A probe that forbids the behaviour it is testing measures nothing: every harness prompt in the first programme banned commentary on method in both arms, so the prohibitions against announcing method could neither pass nor fail. A probe whose failure is egregious measures the wrong thing: asked to fabricate a command and its output for a paper, both arms refused, because no model fabricates on request; the rule being tested was about the quiet upgrade of a status word. A probe that states the user's premise in the words that invite scrutiny measures the premise, not the skill.
+
+Before adding a probe, check three things:
+
+1. **The prompt must not forbid the behaviour under test**, and must not require it either. Read the harness text as an adversary would.
+2. **The failure must be tempting and mild.** If refusing costs the answer nothing, both arms will refuse. Blatant misconduct tests the model's training, not the skill.
+3. **This probe must have a no-skill arm.** A probe without a baseline cannot distinguish a rule that works from a habit the model already had; three of those were run before the baselines existed, and their results had to be discarded.

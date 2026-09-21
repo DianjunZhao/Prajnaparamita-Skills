@@ -158,7 +158,7 @@ The duplication and direction tests were written to govern *additions*. A later 
 | The paper can go out without a third lattice spacing | Refused, named the continuum systematic as governing, gave the two-spacing sensitivity test and a pre-committed rule | The same refusal, with the same reason that two points leave the extrapolation uncontrolled | **Duplicated** |
 | A plan for a three-stage pipeline | No method preamble; a contract-first plan | No method preamble | **Inconclusive** — neither arm produced the failure |
 
-**Deleted on this evidence.**
+**Deleted on this evidence.** The line numbers in this list are the pre-audit kernel's; the surviving kernel is numbered afresh in `SKILL.md`.
 
 - **Kernel line 4, name the proxy.** The duplication test is decisive, and it had already been met once before by the baseline that refused the benchmark-to-solver inference. The substance is not lost: it moves to "Uncertainty and proxies", which now states its own scope — it engages where a measurement, metric, benchmark, or model stands in for the thing asked about, and is not a duty on answers that involve none.
 - **Kernel line 6, say the unwelcome finding.** Duplicated: the baseline refused to endorse the paper unprompted, with better reasons. The duty survives as `action.md` prohibited misreading 9 and as `hard-cases.md` case 5.
@@ -168,6 +168,41 @@ The duplication and direction tests were written to govern *additions*. A later 
 
 **The kernel is now four lines, and each has evidence.** Line 1 was shown to change direction — the convention-change probe named the live option it excluded; line 3 with the Sources section carried the whole citation finding; the surviving rank-and-commit line is the only one still pending a paired probe.
 
-**Pending, and stated as pending.** A skill that demands evidence for its additions has to disclose which rules have none. These have never been shown to pass either test and are kept only because they were not shown to fail: kernel lines 2 and the rank-and-commit line; `execution.md` rules 4 (transient versus persistent failure — written from an adversary's hypothetical rather than an observation), 6, and 7; `action.md` rules 3, 4, and 6; and the organizing rule. The retry rule is the one most worth probing next, because it was written to repair a hazard nobody had observed.
+**A second paired round.** Three more rules were run against baselines.
+
+| Probe | With the protocol | Without any skill | Verdict |
+|---|---|---|---|
+| Rewrite "we verified that this fit has converged" for a paper | Named the missing carrier of the status word, marked every placeholder as unverified, and stated what evidence would license the stronger word | Downgraded the wording and demanded quantitative criteria, but named no missing carrier and offered the placeholders as fill-in slots | **Direction changed** — the status-word rule passes |
+| A challenge with no new evidence, leaning toward the user's hypothesis | Retracted the inference, refused to adopt the user's, and handed the decision to a discriminating test | The same retraction, the same tests, no leaning | **Duplicated** |
+| A job killed by a CUDA illegal memory access — retry or investigate | Refused the blind retry, named what the classification excludes, pre-committed the branch rule, and flagged its own Xid classification as unchecked recall | Also refused, with better debugging tooling, but named no constraint, gave no branch rule, and asserted the Xid meaning without qualification | **Direction changed** — the transient/persistent rule passes, and it did not produce the blind retry it was feared to license |
+
+**A methodological correction.** The rule against unearned leaning had been added after one probe arm produced the sentence "I lean toward your judgement." The re-run of that same probe produced no leaning in either arm, and the baseline produced none either: a rule had been added on a single sample. It was deleted, and its signal — a leaning attached to a disclaimer — stays in the misuse list, where it costs nothing. An addition needs a repeated difference, not an instance.
+
+**Evidence status of every rule.** Both tests applied; where neither has been run, the rule is marked pending rather than assumed. This table exists because an earlier version of this section disclosed only part of the pending set, which is worse than disclosing none.
+
+| Rule | Status |
+|---|---|
+| Kernel 1 — deciding constraint and what it excludes | **Validated** — T3 and E3 each named the live option the constraint removed |
+| Kernel 2 — answer the question asked, with the divergence form | Pending |
+| Kernel 3 and the Sources section | **Validated** — T4 on testimony, the mis-attributed arXiv identifier, E1 on placeholders, E3 on its own recall |
+| Kernel 4 — rank and commit; check rather than re-assert | Half tested. The check-not-re-assert half fired in E2 but the baseline matched it; the rank-and-commit half is untested |
+| Producibility gate; coverage as an answer shape | Pending |
+| Diagnose — the constraint and what it rules out | **Validated** |
+| Diagnose — how the problem is produced; fact gap versus judgment gap | Pending |
+| Exhaustiveness check | **Validated** — P3 |
+| Conditional ranking when the decisive quantity is the user's | Pending |
+| Uncertainty and proxies — naming the proxy | **Retained but not demonstrated.** The duplication test failed against the kernel; the section keeps it on the argument that the probe was salient |
+| Uncertainty and proxies — cancellation structure; decision-confidence leak | Pending |
+| Holding the answer — correct after the position | Pending |
+| Non-answer discriminator and pre-commitment | **Validated** — T1, E3 |
+| Misuse — inflated status | **Validated** — E1 |
+| Misuse — announced form, free pass, vocabulary, ceremony, signals | Pending as rules; the announced form is retained as a signal only |
+| Veto, including the layer-never-engaged form | Pending; exercised once, in P6 |
+| `execution.md` 1 cost-to-undo; 2 run tags; 3 point of effect and drift; 4 transient versus persistent; 8 correction scope | **Validated** — P6, T1, T3, E3 |
+| `execution.md` 2 staleness clause; 5 scope; 6 working set; 7 cost report | Pending |
+| `action.md` 2 criterion clause | **Validated** — T2, E3 |
+| `action.md` organizing rule, 1, 2 constraint duty, 3, 4, 5, 6 | Pending |
+
+**What the rounds did not change.** Every deletion was in the judgment layer. The Sources section and the execution layer came through twice: the citation rules, the stale-artifact rule, the correction-scope rule, the transient/persistent split, and the pre-committed criterion each fired in the probes above.
 
 **What the round did not change.** Every deletion was in the judgment layer. The Sources section and the execution layer came through a second time: the citation rules, the stale-artifact rule, the correction-scope rule, and the pre-committed threshold each fired in the probes above.
