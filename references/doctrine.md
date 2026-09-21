@@ -114,7 +114,7 @@ The skill was then tested against itself: six probes, each answered by an agent 
 
 **The execution layer did fire, once.** In the one genuinely operational probe — a pipeline interrupted midway with two changed quantities — the agent used the run tag (`ran: find/grep -> ...`), classified the action by cost-to-undo, refused to trade a physical definition for schedule, and gave a checkpoint-or-reduce-scope pre-commitment. That falsifies the earlier conclusion that no execution rule ever fires, with the qualification that only an operational probe reaches them.
 
-**The protocol did not stop an unchecked identifier.** Asked to confirm a convention, an agent volunteered a specific arXiv number as the source for a PDG value, and it could not be verified. Nothing in the protocol covered it: the claim labels were aimed at confidence grading, and the sibling skill that owns citation discipline was not loaded. Kernel line 3 now carries the rule, and the signal appears in the misuse list.
+**The protocol did not stop an unchecked identifier.** Asked to confirm a convention, an agent volunteered a specific arXiv number as the source for a PDG value, and it could not be verified. Nothing in the protocol covered it: the claim labels were aimed at confidence grading, and the sibling skill that owns citation discipline was not loaded. The Sources section now carries the rule, and the signal appears in the misuse list.
 
 **What must not be deleted on a future cleanup pass.** These were the increments the test could actually attribute, and they are recorded as a preservation list rather than as a defence: the `ran` tag and the cost-to-undo class; the pre-committed threshold rule; the refusal to squeeze a run into a window by changing a definition; the probe-ranking that runs a cheap diagnostic before authorizing an expensive one; and the requirement that a constraint state what it excludes, which is the change that made a forced-ranking probe come out well.
 
@@ -178,22 +178,33 @@ The duplication and direction tests were written to govern *additions*. A later 
 
 **A methodological correction.** The rule against unearned leaning had been added after one probe arm produced the sentence "I lean toward your judgement." The re-run of that same probe produced no leaning in either arm, and the baseline produced none either: a rule had been added on a single sample. It was deleted, and its signal — a leaning attached to a disclaimer — stays in the misuse list, where it costs nothing. An addition needs a repeated difference, not an instance.
 
+**A third paired round.** Four more judgment-layer rules were run against baselines. All four were duplicated.
+
+| Probe | With the protocol | Without any skill | Verdict |
+|---|---|---|---|
+| Delete every "preliminary" from a paragraph | Full-delete version plus a recommended version; identified the second instance as a status marker rather than a hedge, and named the overclaim risk | Point for point the same: instance one substantive, instance two the wrong word, instance three an overclaim; the same two versions | **Duplicated** |
+| Pick one of three, and do not ask me for data | Chose one, with reasons, the missing quantity, a flip threshold, and no request for data | Chose a different one, with the same structure | **Duplicated** — the arms differ in prior, not in behaviour |
+| Three binnings as a test of autocorrelation | Named the constraint, refused the test, gave the right criterion | The same, argued more crisply, and rejected the user's premise first | **Duplicated** |
+| Correct the record, then answer | Answered first, corrected after, listed the downstream artifacts | Answered first, and did not mention the earlier error at all | **Duplicated on the probed rule**; the record-correction and the blast-radius list are `execution.md` rule 8, already validated |
+
+**The trend is the finding.** Across every paired probe, the execution and sources layers changed direction (T1, T3, T4, E1, E3), and every judgment-layer rule probed has been duplicated (B1, B2, D1, D2, D3, E2, F1, F2, F3, F4). One judgment-layer rule survived: the demand that a constraint name what it excludes, because that is the step an unaided answer skips. The kernel is now two lines, and the file's centre of gravity is unambiguously the record of what was done.
+
 **Evidence status of every rule.** Both tests applied; where neither has been run, the rule is marked pending rather than assumed. This table exists because an earlier version of this section disclosed only part of the pending set, which is worse than disclosing none.
 
 | Rule | Status |
 |---|---|
-| Kernel 1 — deciding constraint and what it excludes | **Validated** — T3 and E3 each named the live option the constraint removed |
-| Kernel 2 — answer the question asked, with the divergence form | Pending |
-| Kernel 3 and the Sources section | **Validated** — T4 on testimony, the mis-attributed arXiv identifier, E1 on placeholders, E3 on its own recall |
-| Kernel 4 — rank and commit; check rather than re-assert | Half tested. The check-not-re-assert half fired in E2 but the baseline matched it; the rank-and-commit half is untested |
+| Kernel 1 — deciding constraint, and what it excludes | **Validated** — T3 and E3 each named the live option the constraint removed; the only judgment-layer rule that survived a paired probe |
+| Kernel 2 and the Sources section | **Validated** — T4 on testimony, the mis-attributed arXiv identifier, E1 on placeholders, E3 on its own recall |
+| Kernel — answer the question asked, with the divergence form | **Deleted** — F1: the baseline stated the same divergence unprompted |
+| Kernel — rank and commit; check rather than re-assert | **Deleted** — F2: both arms committed to a position with reasons, a missing quantity, and a flip threshold; E2: both arms checked rather than re-asserted |
 | Producibility gate; coverage as an answer shape | Pending |
 | Diagnose — the constraint and what it rules out | **Validated** |
 | Diagnose — how the problem is produced; fact gap versus judgment gap | Pending |
 | Exhaustiveness check | **Validated** — P3 |
-| Conditional ranking when the decisive quantity is the user's | Pending |
-| Uncertainty and proxies — naming the proxy | **Retained but not demonstrated.** The duplication test failed against the kernel; the section keeps it on the argument that the probe was salient |
-| Uncertainty and proxies — cancellation structure; decision-confidence leak | Pending |
-| Holding the answer — correct after the position | Pending |
+| Conditional ranking when the decisive quantity is the user's | **Deleted** — duplicated in F2; retained as a misuse signal |
+| Uncertainty and proxies — naming the proxy | **Retained but not demonstrated** |
+| Uncertainty and proxies — cancellation structure | **Deleted** — duplicated in F3; moved to `hard-cases.md` case 6 as calibration |
+| Holding the answer — correct after the position | **Deleted** — duplicated in F4; retained as a misuse signal |
 | Non-answer discriminator and pre-commitment | **Validated** — T1, E3 |
 | Misuse — inflated status | **Validated** — E1 |
 | Misuse — announced form, free pass, vocabulary, ceremony, signals | Pending as rules; the announced form is retained as a signal only |

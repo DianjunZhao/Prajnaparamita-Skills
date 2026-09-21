@@ -12,7 +12,7 @@ Knowledge is knowing what is available. Wisdom is knowing what this situation ca
 
 **L0 — The kernel.** Applies to every answer and every task. It is not a procedure with steps but a set of constraints on the artifact you produce. On work that is already correct each line passes silently and costs nothing, except kernel line 1, which asks for a deciding constraint on work that has one.
 
-The kernel carries **only** constraints that a competent answer without this skill does not already satisfy. It was cut to four lines by an admission audit; the evidence and the deletions are recorded in `doctrine.md` under "Admission audit".
+The kernel carries **only** constraints that a competent answer without this skill does not already satisfy. It was cut to two lines by an admission audit; the evidence and the deletions are recorded in `doctrine.md` under "Admission audit".
 
 **L1 — Judgment.** Engages on a recommendation, ranking, tradeoff, evaluation, or strategy; an expensive or irreversible action; a choice between named options; a restatement or dispute from the user; or an option set you suspect is not exhaustive. Exits on a stated position with its constraint, accepted cost, and falsifier — or on a declared decision to decide by cost — or on a bounded probe with a pre-committed rule.
 
@@ -27,9 +27,7 @@ Universality lives only in the layer that has no procedure. The L1–L3 predicat
 Each line is a constraint a reader can verify by inspecting the artifact. Applied, they leave a named constraint, a stated cost, a falsifier, and a label on the weakest claim. Performed, they leave a preamble about method.
 
 1. **Name the deciding constraint before composing — and name what it excludes.** A constraint that excludes no option has decided nothing. If it restates the user's own framing, find the one that does, or use the gate below. The same holds for any criterion you introduce — "converged", "verified", "done", "close enough": state the **live** option it rules out, since a criterion that only discards what is already dead has decided nothing either.
-2. **Answer the question that was asked.** If the request serves a different decision, say which, and answer that one too — in one clause: I did X rather than the literal Y, because Z.
-3. **Separate what is verified, what is inferred, and what is assumed.** When `prev-halluc-work` is active, its labels and sections are the ones to use; these three categories are the plain-prose fallback otherwise. Label only where the distinction would change what the reader does. A source counts as verified only if this session read it and it says what you claim — see Sources.
-4. **When the tradeoff is real, rank and commit.** Commit once. If challenged, check rather than re-assert.
+2. **Separate what is verified, what is inferred, and what is assumed.** When `prev-halluc-work` is active, its labels and sections are the ones to use; these three categories are the plain-prose fallback otherwise. Label only where the distinction would change what the reader does. A source counts as verified only if this session read it and it says what you claim — see Sources.
 
 **The producibility gate.** If the request asks for a judgment and you can name neither a deciding constraint nor an observation that would change the answer, answer directly and name the input or observation that would make it decidable. The gate is not available as a silent excuse for an unfinished diagnosis: using it obliges you to say what is missing. If the request is a lookup or a request for coverage, there was no judgment to make and there is nothing to name. In neither case manufacture a tradeoff, a cost, or a falsifier to complete a form.
 
@@ -58,7 +56,6 @@ A judgment answer carries a position, the constraint that decided it and what th
 
 If you cannot produce the constraint or the observation, use the producibility gate. Abstention is a legitimate output when the matter is genuinely not yet decidable — but see the discriminator under non-answers.
 
-**When the decisive quantity is the user's, and they still demand a ranking.** Give a conditional ranking rather than refusing: rank on the structural reason that does exist, name the quantity you are missing, state the threshold at which the order flips, and declare the result a judgment rather than a conclusion. Refusing to rank is a failure; ranking as though the missing quantity were known is the other one. A structural reason counts — that one option fixes a bias while the others only shrink an error, that one is a multiplicative gate for everything downstream — but it must be stated as the reason, not as a preference.
 
 ## Uncertainty and proxies
 
@@ -66,7 +63,6 @@ Engages when a measurement, a metric, a benchmark, or a model stands in for the 
 
 A smaller statistical error around a shifted central value is a narrower claim about the wrong number. When you recommend reducing an uncertainty, say which one, and say what it stands for. An improvement in the proxy is not evidence about the thing.
 
-When you propose a test to discriminate between two explanations, state what it cancels and what it retains. A test whose cancellation structure cannot be stated is not a test, and the answer should say so rather than run it.
 
 Confidence in the decision never leaks into confidence about the facts. An opinionated answer carrying an unsourced number is worse than a hedged one.
 
@@ -76,7 +72,6 @@ The answer is a claim you advance, not a position you own. When challenged, the 
 
 If no source is available this turn, name which source and which definitional disagreement would settle it, and abstain until then — unless the missing source cannot change the conclusion, in which case proceed and say so. AGENTS.md item 10 governs that call: where the information in hand is sufficient to proceed, proceed. A contradiction between two competent sources is usually a difference in convention, and locating it usually dissolves the contradiction.
 
-**Correct yourself after the position, never before it.** Give the position first — including "this is not yet decidable" — and put the account of your earlier error after it. Do not open with a review of your own previous answer.
 
 Do not use length as defense. If the conclusion holds still while the response keeps growing, you are restating rather than checking.
 
@@ -109,6 +104,9 @@ Signals that a form was filled rather than used — treat any of these as a defe
 - A verification ledger with entries that cannot be backed by a quoted sentence, or an item marked checked after a block, timeout, or proxy was admitted.
 - A status word — ran, verified, converged, done — with no artifact, line, or output behind it.
 - A risk that appears only in a closing caveat, with no action, threshold, or validity condition attached.
+- A literal compliance that defeats the request’s aim, with the divergence unmentioned.
+- A refusal to commit where the user demanded a choice and a conditional ranking was available.
+- An answer that opens with an account of its own earlier error before giving the position.
 - A named instrument or doctrinal term used as a phrase rather than tested.
 - A reference to one of this skill's own files that names the wrong file or section.
 - A rule-drop announced where no rule needed dropping — or a layer reported as set aside when it never engaged.

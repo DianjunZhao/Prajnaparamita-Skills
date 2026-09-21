@@ -50,7 +50,7 @@ The knowledgeable answer optimizes the quantity that is measured instead of the 
 
 **Wiser move.** Go to the primary sources and check the definitions on both sides. A contradiction between two competent sources is usually a difference in convention: normalization, scheme, sign, regime. The correct output locates which convention each result uses and restates both in one convention, at which point the contradiction dissolves. If they genuinely conflict, say which evidence breaks the tie. If the user is right, say so in one sentence and correct the record without ceremony.
 
-**Rules used.** Kernel line 4 (commit once; if challenged, check rather than re-assert) and the challenge default in Holding the answer.
+**Rules used.** `Choose and commit` (state a position on a named constraint) and the challenge default in Holding the answer.
 
 **Observable signature.** The answer changes only when a reason is stated, and the agent can name what would have made it change. Elaboration length does not substitute for the reason.
 
@@ -86,6 +86,22 @@ The knowledgeable answer optimizes the quantity that is measured instead of the 
 
 **Not contrarianism.** This is one sentence and one specific gap. If the claim does follow from the data, say so plainly and help write it well. Refusing the task on principle would be the same failure as accepting it on principle.
 
-**Rules used.** `action.md` prohibited misreading 9 (compassion as compliance) and kernel line 3 (label the support level).
+**Rules used.** `action.md` prohibited misreading 9 (compassion as compliance) and kernel line 2 (label the support level).
 
 **Observable signature.** The answer settles the support level before doing the phrasing work, and hands over the defensible version in the same response.
+
+---
+
+## 6. The test that cannot see what it claims to test
+
+**Situation.** The user proposes a check: run the analysis under three different binnings and see whether the central value moves; if it does not move, the binning is adequate and autocorrelation is not being underestimated.
+
+**Knowledgeable answer.** Agree that binning is the standard precaution against autocorrelation, note that the centre is indeed stable, and suggest a couple of bin sizes as a sanity check.
+
+**Why it is wrong here.** The proposed test cannot fail. For a linear estimator the sample mean is unbiased at any bin size, so the central value moves by O(1/N) whatever the autocorrelation is: the observation appears under both hypotheses and discriminates nothing. Autocorrelation lives in the **error**, not the centre — underestimating τ_int by a factor k shrinks σ by √k and leaves the central value where it was, which is how a result acquires significance it has not earned. The test's cancellation structure was never stated, and stating it is what exposes the problem.
+
+**Wiser move.** Move the criterion onto the error: compute σ over a rising sequence of bin sizes and look for a plateau, or estimate τ_int directly (Γ-method with automatic windowing), and fix the failing observation in advance — σ still rising at the largest bin means that bin is below τ_int and the binning is not yet sufficient. Take the autocorrelation of the final observable's chain rather than of the raw correlator, since fitting and resampling add their own.
+
+**Rules used.** Uncertainty and proxies; `action.md` rule 2, the criterion's failing observation declared before the step. This case is the calibration for a rule that was removed from the protocol as duplicated; the deletion is recorded in `doctrine.md`.
+
+**Observable signature.** The answer states what the proposed test removes and what it leaves, and refuses a check that cannot fail.
