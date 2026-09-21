@@ -147,4 +147,6 @@ git clone https://github.com/DianjunZhao/Prajnaparamita-Skills.git \
 
 ## 许可
 
-尚未选择许可证。若你希望他人可以自由复用与修改,建议补一个(如 MIT 或 CC BY 4.0)——公开仓库没有许可证时,默认是"保留所有权利"。
+本项目采用 **MIT License** —— 见 [`LICENSE`](LICENSE)。可自由使用、修改、分发(含商业用途),只需保留版权与许可声明。
+
+上表 7 个文档文件合计 744 行,即本 skill 的全部协议与理据;仓库另含 `LICENSE` 与 `.gitignore`。
