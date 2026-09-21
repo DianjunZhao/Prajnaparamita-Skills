@@ -121,9 +121,9 @@ git clone https://github.com/DianjunZhao/Prajnaparamita-Skills.git \
 | `references/hard-cases.md` | 91 | 5 例"知识模式自信地答错",每例标注所用内核行与可观测信号 |
 | `references/contrasts.md` | 96 | 同一请求的知识模式 / 智慧模式双答对照 |
 | `references/eval.md` | 89 | 12 个评测探针与"方向性 vs 形式性"判定标准 |
-| `references/doctrine.md` | 134 | 设计理据(**给人看,不是 agent 输入**):借用与传统的分界、逐条 `verify` 标记、三轮对抗审查记录、以及未来增补的两条准入检验 |
+| `references/doctrine.md` | 148 | 设计理据(**给人看,不是 agent 输入**):借用与传统的分界、逐条 `verify` 标记、三轮对抗审查记录、v1.2 自测结果、以及未来增补的两条准入检验 |
 
-合计 730 行。
+合计 744 行。
 
 ---
 
